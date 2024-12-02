@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Conversion Result</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container mt-5">
+        <h2 class="mb-4">Conversion Result</h2>
+        
+        <div class="mb-4">
+            <p class="h4">
+                <span th:text="${fromAmount}"></span>
+                <span th:text="${fromCurrency}"></span>
+                = 
+                <span th:text="${toAmount}"></span>
+                <span th:text="${toCurrency}"></span>
+            </p>
+        </div>
+
+        <a href="/" class="btn btn-primary">New Conversion</a>
+    </div>
+</body>
+</html>
